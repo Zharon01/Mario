@@ -12,7 +12,23 @@ body {
     src: url(fonts/SuperMario256.ttf);
 }
 .mario {
-    position: absolute;
+    position: relative;
    left: 0px;
-   margin-top: 560px;
+   margin-top: 580px;
+}
+.tortuga {
+    position: absolute;
+   right: 100px;
+    bottom: 90px;
+}
+.anime1 {
+    position: relative;
+    animation: caminata 10s infinite;
+}
+@keyframes caminata {
+    0% {left: 0;}
+    25% {left: 100px;}
+    50% {left: 400px; right: 600px;}
+    75% {left: 20px; right: 0px;}
+    100% {left: 0px; right: 60px; bottom: 100px;}
 }
